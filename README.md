@@ -1,7 +1,7 @@
 Webapp React
 
 <p align="justify">proyecto citas de paciente que esta desarrollado en React vite con TailwindCSS,localstorage y hooks.</br></br>
-citas-pacientes-reactweb.netlify.app
+https://citas-pacientes-reactweb.netlify.app/
 </p>
 
 # 1.-Home
