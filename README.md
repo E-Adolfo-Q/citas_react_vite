@@ -1,8 +1,8 @@
 Webapp React
 
-<p align="justify">WebApp buscador de clima desarrollado react vite,hooks,api context, y axios.</br></br>
-https://webclimaapp.netlify.app/
+<p align="justify">proyecto citas de paciente que esta desarrollado en React vite con TailwindCSS,localstorage y hooks.</br></br>
+citas-pacientes-reactweb.netlify.app
 </p>
 
 # 1.-Home
-<img src="https://github.com/elagosq/climaapp/blob/master/reactappclima.png" width="800" height="800" />
+<img src="https://github.com/elagosq/citas_react_vite/blob/main/home.png" width="800" height="800" />
