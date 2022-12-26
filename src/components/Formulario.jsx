@@ -11,7 +11,7 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
   const [error,setError] = useState(false);
   
   //useEffect que ejecuta cuando paciente cambie y 
-  //si el array de dependencia esta vacio que se ejecuta una sola vez
+  //Si el array de dependencia esta vacio que se ejecuta una sola vez
   useEffect(() => {
    if(Object.keys(paciente).length > 0){
       setNombre(paciente.nombre);
@@ -20,7 +20,7 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
       setFecha(paciente.fecha)
       setSintomas(paciente.sintomas)
    }
-  },[paciente]);
+  }, [paciente]);
 
   const generarId = () => {
     const random = Math.random().toString(36).substr(2);
@@ -47,7 +47,7 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
       email,
       fecha,
       sintomas
-    }
+    };
 
     if(paciente.id){
       //Editando registro
@@ -56,7 +56,6 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
       const pacientesActualizados = pacientes.map(pacienteState => pacienteState.id === 
       paciente.id ? objectoPaciente : pacienteState)
       
-      //console.log(pacienteActualizado);
       setPacientes(pacientesActualizados)
       setPaciente({});  
 
@@ -77,7 +76,7 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
 
   return (
    <div className='md:w-1/2 lg:w-2/5 mx-5'>
-    <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes</h2>
+    <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes {''} </h2>
     <p className='text-lg mt-5 text-center mb-10'>
       Añade Pacientes y {''}
       <span className='text-indigo-600 font-bold'>Administralos</span> 
